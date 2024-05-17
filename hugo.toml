@@ -1,0 +1,63 @@
+baseURL = 'https://konstantintomashevich.github.io/'
+languageCode = 'en-us'
+title = 'Konstantin Tomashevich Personal Site'
+theme = 'hugo-coder'
+
+languagecode = "en"
+defaultcontentlanguage = "en"
+
+paginate = 20
+
+[markup.highlight]
+style = "github-dark"
+
+[params]
+  author = "Konstantin Tomashevich"
+  info = "Hedge Knight Of Game Programming"
+  description = "Konstantin Tomashevich's personal website"
+  keywords = "developer,personal"
+  avatarurl = "images/avatar.jpg"
+
+  faviconSVG = "/img/favicon.svg"
+  favicon_32 = "/img/favicon-32x32.png"
+  favicon_16 = "/img/favicon-16x16.png"
+
+  since = 2024
+
+  colorScheme = "auto"
+  hidecolorschemetoggle = false
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
+
+[[params.social]]
+  name = "Github"
+  icon = "fa-brands fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/KonstantinTomashevich"
+
+[[params.social]]
+  name = "Telegram"
+  icon = "fa-brands fa-telegram fa-2x"
+  weight = 2
+  url = "https://t.me/KonstantinTomashevich"
+
+[[params.social]]
+  name = "Linkedin"
+  icon = "fa-brands fa-linkedin fa-2x"
+  weight = 3
+  url = "https://www.linkedin.com/in/konstantin-tomashevich-1881aa152"
+
+[[menu.main]]
+  name = "About"
+  weight = 1
+  url = "about/"
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = true
+    startLevel = 2
