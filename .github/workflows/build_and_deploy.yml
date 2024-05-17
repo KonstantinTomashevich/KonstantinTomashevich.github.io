@@ -2,15 +2,7 @@ name: build_and_deploy
 on:
   push:
     branches:
-      - main
       - master
-    paths-ignore:
-      - .gitignore
-      - README.md
-      - LICENSE
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
 
 permissions:
   contents: read
@@ -30,7 +22,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
           submodules: true
 
       - name: Install Hugo
@@ -39,7 +30,8 @@ jobs:
             sudo apt-get install hugo
 
       - name: Build
-        run: hugo
+        working-directory: ${{github.workspace}}
+        run: ls && hugo
 
       - name: Upload
         uses: actions/upload-pages-artifact@v3
