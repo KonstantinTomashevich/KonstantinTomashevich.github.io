@@ -24,12 +24,12 @@ paginate = 20
       url = "https://github.com/KonstantinTomashevich"
       weight = 1
   [[menu.shortcuts]]
-      name = "<i class='fa-fw fab fa-telegram'></i> Telegram"
-      url = "https://t.me/KonstantinTomashevich"
-      weight = 2
-  [[menu.shortcuts]]
       name = "<i class='fa-fw fab fa-linkedin'></i> LinkedIn"
       url = "https://www.linkedin.com/in/konstantin-tomashevich-1881aa152"
+      weight = 2
+  [[menu.shortcuts]]
+      name = "<i class='fa-fw fab fa-telegram'></i> Telegram"
+      url = "https://t.me/KonstantinTomashevich"
       weight = 3
 
 [markup]
